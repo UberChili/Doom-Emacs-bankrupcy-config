@@ -56,6 +56,10 @@ Some functionality uses this to identify you, e.g. GPG configuration, email clie
 
 * Languages and LSP stuff
 ** C++
+#+begin_src emacs-lisp
+(after! eglot
+  (add-hook 'eglot-managed-mode-hook (lambda () (eglot-inlay-hints-mode -1))))
+#+end_src
 ** Rust
 ** Odin
 
