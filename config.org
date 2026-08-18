@@ -35,8 +35,8 @@ Some functionality uses this to identify you, e.g. GPG configuration, email clie
 
 * Font
 #+begin_src emacs-lisp
-(setq doom-font (font-spec :family "Iosevka Nerd Font Mono" :size 16)
-      doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font Mono" :size 16))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 17)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 16))
 
 #+end_src
 
