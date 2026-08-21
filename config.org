@@ -40,12 +40,13 @@ Some functionality uses this to identify you, e.g. GPG configuration, email clie
 
 #+end_src
 
-* Org and Org Roam
+* Org, Org agenda, and Org Roam
 #+begin_src emacs-lisp
 (setq org-directory "~/Nextcloud/Notes/")
 (after! org
         (setq org-agenda-files (list org-directory)
-       org-roam-directory (expand-file-name "roam" org-directory)))
+       org-roam-directory (expand-file-name "roam" org-directory))
+        (setq org-agenda-span 20))
 (after! org-roam
  (org-roam-db-autosync-mode)
  (setq org-roam-mode-sections
